@@ -8,6 +8,6 @@ a {
     text-decoration: none;
 }
 
-.header-topbar {
-    border-bottom: 1px solid;
+.header-border-line {
+    border-bottom: 1px solid #aaa;
 }

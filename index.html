@@ -21,18 +21,17 @@
     </head>
     <body>
         <header class="header">
-            <div class="header-topbar">
+            <div
+                class="header-topbar my-3 d-flex justify-content-end container"
+            >
                 <a href="" class="mx-2 text-dark">Return</a>
                 <a href="" class="mx-2 text-dark">Home</a>
                 <a href="" class="mx-2 text-dark">Login</a>
             </div>
+            <div class="header-border-line"></div>
 
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <form class="d-flex" role="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </form>
+            <nav class="navbar navbar-expand-sm bg-light container">
+                <div class="w-100">
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -45,10 +44,20 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div
-                        class="collapse navbar-collapse"
+                        class="collapse navbar-collapse w-100 row"
                         id="navbarSupportedContent"
                     >
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <form
+                            class="d-flex col-3 col-sm-3 col-md-3 col-lg-3"
+                            role="search"
+                        >
+                            <i
+                                class="fa-solid fa-magnifying-glass text-danger"
+                            ></i>
+                        </form>
+                        <ul
+                            class="navbar-nav mb-2 mb-lg-0 col-9 col-sm-9 col-md-9 col-lg-9 d-flex justify-content-around align-content-center"
+                        >
                             <li class="nav-item">
                                 <a
                                     class="nav-link active"
@@ -74,7 +83,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Abount us</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-flex flex-row">
                                 <a class="nav-link" href="#"
                                     ><i class="fa-solid fa-user"></i
                                 ></a>
@@ -92,70 +101,110 @@
             </nav>
         </header>
         <main>
-            <section class="banner">
-                <div class="banner-content">
+            <section
+                class="banner container mt-5 d-flex flex-wrap bg-opacity-75"
+            >
+                <div class="banner-content col-6 col-sm-6 col-md-6 col-lg-8">
                     <div class="banner-content__title">
                         PROVIDING SERVICES AT YOUR DOOR
                     </div>
                     <div class="banner-content__des">
-                        MACC Essentials has an important role in making supplies
-                        and services available to customers and their patients
-                        during this critical time. This includes services from
-                        various domains. Our aim is to aid you. As much we can.
+                        <p>
+                            MACC Essentials has an important role in making
+                            supplies and services available to customers and
+                            their patients during this critical time. This
+                            includes services from various domains. Our aim is
+                            to aid you. As much we can.
+                        </p>
+                        <button class="btn btn-danger">Lean more</button>
                     </div>
                 </div>
-                <div class="banner-img">
-                    <img src="./image/cover_img.png" alt="" />
+                <div
+                    class="banner-img col-6 col-sm-6 col-md-6 col-lg-4 d-flex justify-content-end"
+                >
+                    <img src="./image/cover_img.png" class="w-100" alt="" />
                 </div>
             </section>
 
-            <section class="new-product">
+            <section class="new-product container mt-5">
                 <div class="new-product-title">
                     <span>NEW PRODUCTS</span>
                 </div>
-                <div class="new-product-wrap">
-                    <div class="new-product-item">
+                <div class="new-product-wrap row">
+                    <div
+                        class="new-product-item col-12 p-2 col-sm-6 col-md-4 col-lg-3"
+                    >
                         <div class="new-product-item__img">
-                            <img src="./image/Product_img.png" alt="" />
+                            <img
+                                src="./image/Product_img.png"
+                                class="w-100"
+                                alt=""
+                            />
                         </div>
                         <div class="new-product-item__name">Face Masks</div>
                     </div>
-                    <div class="new-product-item">
+                    <div
+                        class="new-product-item p-2 col-12 col-sm-6 col-md-4 col-lg-3"
+                    >
                         <div class="new-product-item__img">
-                            <img src="./image/Product_img.png" alt="" />
+                            <img
+                                src="./image/Product_img.png"
+                                class="w-100"
+                                alt=""
+                            />
                         </div>
                         <div class="new-product-item__name">Face Masks</div>
                     </div>
-                    <div class="new-product-item">
+                    <div
+                        class="new-product-item p-2 col-12 col-sm-6 col-md-4 col-lg-3"
+                    >
                         <div class="new-product-item__img">
-                            <img src="./image/Product_img.png" alt="" />
+                            <img
+                                src="./image/Product_img.png"
+                                class="w-100"
+                                alt=""
+                            />
                         </div>
                         <div class="new-product-item__name">Face Masks</div>
                     </div>
                 </div>
             </section>
-            <section class="product-discount">
-                <div class="product-discount-img">
-                    <img src="./image/Bg.png" alt="" />
+            <section class="product-discount row mt-5">
+                <div
+                    class="product-discount-img col-4 col-sm-4 col-md-4 col-lg-4"
+                >
+                    <img src="./image/Bg.png" class="w-100" alt="" />
                 </div>
-                <div class="">
-                    <div class="">
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 pr-3">
+                    <div class="d-flex justify-content-between">
                         <p>MACC WEEKLY DISCOUNT</p>
-                        <button>View All</button>
+                        <button class="btn btn-secondary">View All</button>
                     </div>
-                    <div class="product-discount-wrap">
-                        <div class="product-discount-item">
+                    <div class="product-discount-wrap row">
+                        <div
+                            class="product-discount-item col-6 col-sm-6 col-md-6 col-lg-6"
+                        >
                             <div class="product-discount-item__img">
-                                <img src="./image/Product_img_xl.png" alt="" />
+                                <img
+                                    src="./image/Product_img_xl.png"
+                                    class="w-100"
+                                    alt=""
+                                />
                             </div>
                             <div class="product-discount-des">
                                 <p>Body Spray</p>
                                 <p>₹ 500 ₹ 400</p>
                             </div>
                         </div>
-                        <div class="product-discount-item">
+                        <div
+                            class="product-discount-item col-6 col-sm-6 col-md-6 col-lg-6"
+                        >
                             <div class="product-discount-item__img">
-                                <img src="./image/Product_img_xl.png" alt="" />
+                                <img
+                                    src="./image/Product_img_xl.png"
+                                    class="w-100"
+                                    alt=""
+                                />
                             </div>
                             <div class="product-discount-des">
                                 <p>Body Spray</p>
@@ -166,25 +215,37 @@
                 </div>
             </section>
 
-            <section class="product-selling">
-                <div class="">
-                    <div class="">
+            <section class="product-selling row mt-5">
+                <div class="p-3 col-8 col-sm-8 col-md-8 col-lg-8">
+                    <div class="d-flex justify-content-between">
                         <p>MACC TOP SELLINGS</p>
-                        <button>View All</button>
+                        <button class="btn btn-secondary">View All</button>
                     </div>
-                    <div class="product-selling-wrap">
-                        <div class="product-selling-item">
+                    <div class="product-selling-wrap row">
+                        <div
+                            class="product-selling-item col-6 col-sm-6 col-md-6 col-lg-6"
+                        >
                             <div class="product-selling-item__img">
-                                <img src="./image/Product_img_xl.png" alt="" />
+                                <img
+                                    src="./image/Product_img_xl.png"
+                                    class="w-100"
+                                    alt=""
+                                />
                             </div>
                             <div class="product-selling-item-des">
                                 <p>Body Spray</p>
                                 <p>₹ 500 ₹ 400</p>
                             </div>
                         </div>
-                        <div class="product-selling">
+                        <div
+                            class="product-selling col-6 col-sm-6 col-md-6 col-lg-6"
+                        >
                             <div class="product-selling-item__img">
-                                <img src="./image/Product_img_xl.png" alt="" />
+                                <img
+                                    src="./image/Product_img_xl.png"
+                                    class="w-100"
+                                    alt=""
+                                />
                             </div>
                             <div class="product-selling-item-des">
                                 <p>Body Spray</p>
@@ -193,11 +254,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-selling-img">
-                    <img src="./image/Bg.png" alt="" />
+                <div
+                    class="product-selling-img col-4 col-sm-4 col-md-4 col-lg-4"
+                >
+                    <img src="./image/Bg.png" class="w-100" alt="" />
                 </div>
             </section>
-            <section class="covid">
+            <section class="covid container text-center">
                 <p>COVID-19 GUIDELINES</p>
                 <p>
                     Please remember to adhere all covid-19 guidelines.
@@ -206,31 +269,35 @@
                 </p>
             </section>
         </main>
-        <footer>
-            <div class="footer-item-wrap">
-                <div class="footer-logo">
-                    <img src="./image/logo.png" alt="" />
+        <footer class="container">
+            <div class="footer-item-wrap row">
+                <div class="footer-logo col-3 col-sm-3 col-md-3 col-lg-3">
+                    <img src="./image/logo.png" class="w-100" alt="" />
                 </div>
-                <div class="footer-menu">
+                <div
+                    class="footer-menu d-flex flex-column col-3 col-sm-3 col-md-3 col-lg-3"
+                >
                     <a href="">Home</a>
                     <a href="">Collection</a>
                     <a href="">Product</a>
                 </div>
 
-                <div class="footer-menu">
+                <div
+                    class="footer-menu d-flex flex-column col-3 col-sm-3 col-md-3 col-lg-3"
+                >
                     <a href="">About</a>
                     <a href="">Contact</a>
                     <a href="">FAQ</a>
                 </div>
-                <div class="footer-contact">
+                <div class="footer-contact col-3 col-sm-3 col-md-3 col-lg-3">
                     <div class="footer-contact-des">
                         Be the first to know about our biggest and best sales.
                         We'll never send more than one email a month.
                     </div>
                     <div>
                         <form action="">
-                            <div>
-                                <input type="text" />
+                            <div class="form-group">
+                                <input type="text" class="form-control" />
                                 <a href=""
                                     ><i class="fa-solid fa-envelope"></i
                                 ></a>
