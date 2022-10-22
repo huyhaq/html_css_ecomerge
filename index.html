@@ -26,11 +26,18 @@
             >
                 <a href="" class="mx-2 text-dark">Return</a>
                 <a href="" class="mx-2 text-dark">Home</a>
-                <a href="" class="mx-2 text-dark">Login</a>
+                <a
+                    href=""
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginModal"
+                    class="mx-2 text-dark"
+                    >Login</a
+                >
             </div>
             <div class="header-border-line"></div>
 
-            <nav class="navbar navbar-expand-sm bg-light container">
+            <nav class="navbar navbar-expand-sm bg-light">
                 <div class="w-100">
                     <button
                         class="navbar-toggler"
@@ -44,20 +51,15 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div
-                        class="collapse navbar-collapse w-100 row"
+                        class="collapse navbar-collapse"
                         id="navbarSupportedContent"
                     >
-                        <form
-                            class="d-flex col-3 col-sm-3 col-md-3 col-lg-3"
-                            role="search"
-                        >
+                        <form class="" role="search">
                             <i
                                 class="fa-solid fa-magnifying-glass text-danger"
                             ></i>
                         </form>
-                        <ul
-                            class="navbar-nav mb-2 mb-lg-0 col-9 col-sm-9 col-md-9 col-lg-9 d-flex justify-content-around align-content-center"
-                        >
+                        <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a
                                     class="nav-link active"
@@ -72,8 +74,8 @@
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#"
-                                    ><span>Macc</span>
-                                    <span>Essentials</span>
+                                    ><span class="text-danger">Macc</span>
+                                    <span class="text-primary">Essentials</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -101,10 +103,8 @@
             </nav>
         </header>
         <main>
-            <section
-                class="banner container mt-5 d-flex flex-wrap bg-opacity-75"
-            >
-                <div class="banner-content col-6 col-sm-6 col-md-6 col-lg-8">
+            <section class="banner container">
+                <div class="banner-content">
                     <div class="banner-content__title">
                         PROVIDING SERVICES AT YOUR DOOR
                     </div>
@@ -116,13 +116,11 @@
                             includes services from various domains. Our aim is
                             to aid you. As much we can.
                         </p>
-                        <button class="btn btn-danger">Lean more</button>
+                        <button class="btn-custom">Lean more</button>
                     </div>
                 </div>
-                <div
-                    class="banner-img col-6 col-sm-6 col-md-6 col-lg-4 d-flex justify-content-end"
-                >
-                    <img src="./image/cover_img.png" class="w-100" alt="" />
+                <div class="banner-img">
+                    <img src="./image/cover_img.png" class="img-fluid" alt="" />
                 </div>
             </section>
 
@@ -131,37 +129,81 @@
                     <span>NEW PRODUCTS</span>
                 </div>
                 <div class="new-product-wrap row">
-                    <div
-                        class="new-product-item col-12 p-2 col-sm-6 col-md-4 col-lg-3"
-                    >
+                    <div class="card new-product-item">
                         <div class="new-product-item__img">
                             <img
                                 src="./image/Product_img.png"
-                                class="w-100"
+                                class="img-fluid"
                                 alt=""
                             />
                         </div>
                         <div class="new-product-item__name">Face Masks</div>
                     </div>
-                    <div
-                        class="new-product-item p-2 col-12 col-sm-6 col-md-4 col-lg-3"
-                    >
+                    <div class="card new-product-item">
                         <div class="new-product-item__img">
                             <img
                                 src="./image/Product_img.png"
-                                class="w-100"
+                                class="img-fluid"
                                 alt=""
                             />
                         </div>
                         <div class="new-product-item__name">Face Masks</div>
                     </div>
-                    <div
-                        class="new-product-item p-2 col-12 col-sm-6 col-md-4 col-lg-3"
-                    >
+                    <div class="card new-product-item">
                         <div class="new-product-item__img">
                             <img
                                 src="./image/Product_img.png"
-                                class="w-100"
+                                class="img-fluid"
+                                alt=""
+                            />
+                        </div>
+                        <div class="new-product-item__name">Face Masks</div>
+                    </div>
+                    <div class="card new-product-item">
+                        <div class="new-product-item__img">
+                            <img
+                                src="./image/Product_img.png"
+                                class="img-fluid"
+                                alt=""
+                            />
+                        </div>
+                        <div class="new-product-item__name">Face Masks</div>
+                    </div>
+                    <div class="card new-product-item">
+                        <div class="new-product-item__img">
+                            <img
+                                src="./image/Product_img.png"
+                                class="img-fluid"
+                                alt=""
+                            />
+                        </div>
+                        <div class="new-product-item__name">Face Masks</div>
+                    </div>
+                    <div class="card new-product-item">
+                        <div class="new-product-item__img">
+                            <img
+                                src="./image/Product_img.png"
+                                class="img-fluid"
+                                alt=""
+                            />
+                        </div>
+                        <div class="new-product-item__name">Face Masks</div>
+                    </div>
+                    <div class="card new-product-item">
+                        <div class="new-product-item__img">
+                            <img
+                                src="./image/Product_img.png"
+                                class="img-fluid"
+                                alt=""
+                            />
+                        </div>
+                        <div class="new-product-item__name">Face Masks</div>
+                    </div>
+                    <div class="card new-product-item">
+                        <div class="new-product-item__img">
+                            <img
+                                src="./image/Product_img.png"
+                                class="img-fluid"
                                 alt=""
                             />
                         </div>
@@ -170,10 +212,8 @@
                 </div>
             </section>
             <section class="product-discount row mt-5">
-                <div
-                    class="product-discount-img col-4 col-sm-4 col-md-4 col-lg-4"
-                >
-                    <img src="./image/Bg.png" class="w-100" alt="" />
+                <div class="product-discount-img">
+                    <img src="./image/Bg.png" class="img-fluid" alt="" />
                 </div>
                 <div class="col-8 col-sm-8 col-md-8 col-lg-8 pr-3">
                     <div class="d-flex justify-content-between">
@@ -181,13 +221,11 @@
                         <button class="btn btn-secondary">View All</button>
                     </div>
                     <div class="product-discount-wrap row">
-                        <div
-                            class="product-discount-item col-6 col-sm-6 col-md-6 col-lg-6"
-                        >
+                        <div class="product-discount-item">
                             <div class="product-discount-item__img">
                                 <img
                                     src="./image/Product_img_xl.png"
-                                    class="w-100"
+                                    class="img-fluid"
                                     alt=""
                                 />
                             </div>
@@ -196,13 +234,24 @@
                                 <p>₹ 500 ₹ 400</p>
                             </div>
                         </div>
-                        <div
-                            class="product-discount-item col-6 col-sm-6 col-md-6 col-lg-6"
-                        >
+                        <div class="product-discount-item">
                             <div class="product-discount-item__img">
                                 <img
                                     src="./image/Product_img_xl.png"
-                                    class="w-100"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="product-discount-des">
+                                <p>Body Spray</p>
+                                <p>₹ 500 ₹ 400</p>
+                            </div>
+                        </div>
+                        <div class="product-discount-item">
+                            <div class="product-discount-item__img">
+                                <img
+                                    src="./image/Product_img_xl.png"
+                                    class="img-fluid"
                                     alt=""
                                 />
                             </div>
@@ -216,7 +265,7 @@
             </section>
 
             <section class="product-selling row mt-5">
-                <div class="p-3 col-8 col-sm-8 col-md-8 col-lg-8">
+                <div class="p-3">
                     <div class="d-flex justify-content-between">
                         <p>MACC TOP SELLINGS</p>
                         <button class="btn btn-secondary">View All</button>

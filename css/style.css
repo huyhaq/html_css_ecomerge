@@ -11,3 +11,53 @@ a {
 .header-border-line {
     border-bottom: 1px solid #aaa;
 }
+
+.btn-custom:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    transition: all 1s ease;
+    height: 100%;
+    left: -40px;
+    z-index: -1;
+    opacity: 0;
+    bottom: -10px;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #25261b;
+}
+.btn-custom {
+    position: relative;
+    border: unset;
+    z-index: 100;
+    display: block;
+    overflow: hidden;
+}
+.btn-custom:hover {
+    color: #fff;
+}
+.btn-custom:hover:before {
+    width: 100px;
+    opacity: 1;
+    transform: translate(0);
+}
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    background: red;
+    opacity: 0;
+    left: 0;
+    transition: all 500ms ease-in;
+}
+.nav-link:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+.nav-link:hover {
+    color: red !important;
+}
